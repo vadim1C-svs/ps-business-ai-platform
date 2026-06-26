@@ -1,0 +1,7 @@
+flowchart TD
+    Owner[Business Owner] --> Telegram[Telegram Bot]
+    Telegram --> Backend[PSGroup Backend]
+    Backend --> DB[(PostgreSQL)]
+    OneC[1C Extension] --> Backend
+    OneC --> Base[(1C Database)]
+    Backend --> AI[AI Gateway]

@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  title: PSGroup Business AI Platform API
+  version: 0.1.0
+paths:
+  /api/v1/health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+  /api/v1/databases/register:
+    post:
+      summary: Register 1C database
+      responses:
+        '200':
+          description: Database registered
+  /api/v1/metrics/push:
+    post:
+      summary: Push metrics from 1C
+      responses:
+        '200':
+          description: Metrics accepted
